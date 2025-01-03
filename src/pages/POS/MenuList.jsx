@@ -14,19 +14,63 @@ export default function MenuList() {
         <AiOutlineSearch className="w-10 h-10 p-sm rounded-full bg-background-secondary" />
       </div>
       <div className="grid grid-cols-7 gap-xl">
-        <ItemCard category="Sandwich" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Sandwich" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Sandwich" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
-        <ItemCard category="Pastry" />
+        <ItemCard
+          name="Beef Crowich"
+          category="Sandwich"
+          img="/img/sandwich.png"
+        />
+        <ItemCard
+          name="Buttermelt Croissant"
+          category="Pastry"
+          img="/img/croissant.png"
+        />
+        <ItemCard
+          name="Cereal Cream Donut"
+          category="Donut"
+          img="/img/donut.png"
+        />
+        <ItemCard
+          name="Cheesy Cheesecake"
+          category="Cake"
+          img="/img/cheesecake.png"
+        />
+        <ItemCard
+          name="Cheezy Sourdough"
+          category="Bread"
+          img="/img/sourdough.png"
+        />
+        <ItemCard name="Egg Tart" category="Tart" img="/img/eggtart.png" />
+        <ItemCard
+          name="Grains Pan Bread"
+          category="Bread"
+          img="/img/bread.png"
+        />
+        <ItemCard
+          name="Cereal Cream Donut"
+          category="Donut"
+          img="/img/donut.png"
+        />
+        <ItemCard name="Egg Tart" category="Tart" img="/img/eggtart.png" />
+        <ItemCard
+          name="Beef Crowich"
+          category="Sandwich"
+          img="/img/sandwich.png"
+        />
+        <ItemCard
+          name="Buttermelt Croissant"
+          category="Pastry"
+          img="/img/croissant.png"
+        />
+        <ItemCard
+          name="Grains Pan Bread"
+          category="Bread"
+          img="/img/bread.png"
+        />
+        <ItemCard
+          name="Cheesy Cheesecake"
+          category="Cake"
+          img="/img/cheesecake.png"
+        />
       </div>
     </div>
   );
