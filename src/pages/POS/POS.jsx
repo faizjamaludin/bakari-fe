@@ -1,4 +1,4 @@
-import { DashboardLayout } from "@/layouts";
+import { PosLayout } from "@/layouts";
 import React from "react";
 import Header from "./Header";
 import Category from "./Category";
@@ -6,10 +6,10 @@ import MenuList from "./MenuList";
 
 export default function POS() {
   return (
-    <DashboardLayout>
+    <PosLayout>
       <Header />
       <Category />
       <MenuList />
-    </DashboardLayout>
+    </PosLayout>
   );
 }

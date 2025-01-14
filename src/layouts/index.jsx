@@ -1,3 +1,4 @@
+import PosLayout from "./PosLayout";
 import DashboardLayout from "./DashboardLayout";
 
-export { DashboardLayout };
+export { PosLayout, DashboardLayout };
