@@ -24,7 +24,7 @@ export default {
           red: "#fff5f5",
           blue: "#f5f9ff",
           primary: "#FFFFFF",
-          secondary: "#fafafa",
+          secondary: "#f5f5f5",
         },
         text: {
           success: "#137e6a",
