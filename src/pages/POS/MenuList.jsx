@@ -3,6 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import ItemCard from "./ItemCard/ItemCard";
 
 export default function MenuList() {
+  console.log(screen.width);
   return (
     <div className="flex flex-col gap-y-md">
       {/* search bar */}
@@ -13,7 +14,7 @@ export default function MenuList() {
         />
         <AiOutlineSearch className="w-10 h-10 p-sm rounded-full bg-background-secondary" />
       </div>
-      <div className="grid grid-cols-7 gap-xl">
+      <div className="grid laptop:grid-cols-5 desktop:grid-cols-7 gap-xl">
         <ItemCard
           name="Beef Crowich"
           category="Sandwich"

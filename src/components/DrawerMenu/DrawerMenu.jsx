@@ -18,9 +18,10 @@ function DrawerMenu({ button, header }) {
     return (
         <Drawer direction="left">
             <DrawerTrigger>{<HiOutlineMenuAlt4 className="bg-background-primary rounded-full w-12 h-12 p-sm text-primary" />}</DrawerTrigger>
-            <DrawerContent className="inset-y-0 w-[400px] mt-0 rounded-none">
+            <DrawerContent className="inset-y-0 w-[400px] mt-0 rounded-none p-md">
                 <DrawerHeader>
-                    <Header />
+                    <DrawerTitle><Header /></DrawerTitle>
+                    <DrawerDescription></DrawerDescription>
                 </DrawerHeader>
                 <Menu />
                 <DrawerFooter>

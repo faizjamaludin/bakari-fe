@@ -82,6 +82,16 @@ export default {
         "top-md": "0 -4px 6px -1px rgb(0 0 0 / 0.03), 0 -2px 4px -2px rgb(0 0 0 / 0.03);",
 
       },
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        'desktop': '1920px',
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
