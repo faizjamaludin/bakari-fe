@@ -1,9 +1,14 @@
-import React from 'react'
+import { DashboardHeader } from "@/components";
+import { DashboardLayout } from "@/layouts";
+import React from "react";
 
 function Inventory() {
-    return (
-        <div></div>
-    )
+  return (
+    <DashboardLayout>
+      <DashboardHeader />
+      <div></div>
+    </DashboardLayout>
+  );
 }
 
-export default Inventory
+export default Inventory;
