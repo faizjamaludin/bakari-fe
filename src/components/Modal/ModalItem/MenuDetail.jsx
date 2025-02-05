@@ -1,10 +1,6 @@
 import React from "react";
 import {
-  AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
@@ -12,6 +8,8 @@ import {
 import { Tag } from "@/components";
 import { TbMinus, TbPlus } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea"
+import { IoMdClose } from "react-icons/io";
 
 function MenuDetail() {
   return (
@@ -19,7 +17,7 @@ function MenuDetail() {
       <AlertDialogHeader className="w-full">
         <AlertDialogTitle className="flex flex-row items-center justify-between">
           <h1 className="text-lg font-semibold">Detail Menu</h1>
-          <AlertDialogCancel className="">x</AlertDialogCancel>
+          <AlertDialogCancel className="w-fit w-10 h-10 bg-background-red text-text-red hover:bg-text-red hover:text-background-red ease-in-out duration-200"><IoMdClose /></AlertDialogCancel>
         </AlertDialogTitle>
       </AlertDialogHeader>
 
@@ -34,7 +32,7 @@ function MenuDetail() {
           mouth!
         </p>
         <p className="text-lg text-text-blue font-semibold">RM 4.00</p>
-        <input
+        <Textarea
           type="text"
           className="border text-sm bg-background-secondary"
           placeholder="Add notes to your order..."
@@ -43,7 +41,7 @@ function MenuDetail() {
           <Button variant="icon-sm" size="icon-sm">
             <TbMinus />
           </Button>
-          <p>1</p>
+          <p className="font-medium">1</p>
           <Button variant="icon-sm" size="icon-sm">
             <TbPlus />
           </Button>
@@ -51,7 +49,7 @@ function MenuDetail() {
       </div>
 
       <AlertDialogFooter className="w-full">
-        <Button variant="order" className="w-full">
+        <Button variant="primary" className="w-full">
           Add to Cart
         </Button>
       </AlertDialogFooter>
