@@ -20,9 +20,7 @@ export default function Tag({ category }) {
 
   return (
     <div
-      className={`text-[11px] ${tagColor(
-        category
-      )} rounded-full px-sm py-2xs font-semibold`}
+      className={`text-[11px] ${tagColor(category)} rounded-full px-sm py-2xs font-semibold w-fit`}
     >
       {category}
     </div>

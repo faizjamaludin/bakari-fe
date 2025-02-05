@@ -20,7 +20,9 @@ const buttonVariants = cva(
           "bg-zinc-100 text-zinc-900 shadow-sm hover:bg-zinc-100/80 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-800/80",
         order: "bg-primary rounded-none text-white text-xl font-regular",
         icon: "rounded-full",
-        action: "rounded-full p-lg bg-background-primary text-blue-500 border border-blue-500 text-sm hover:bg-background-blue hover:text-text-blue",
+        action:
+          "rounded-full p-lg bg-background-primary text-blue-500 border border-blue-500 text-sm hover:bg-background-blue hover:text-text-blue",
+        "icon-sm": "bg-background-primary rounded-full p-2xs",
         ghost:
           "hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
         link: "text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50",
@@ -32,6 +34,7 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "p-md",
+        "icon-sm": "w-6 h-6",
       },
     },
     defaultVariants: {
@@ -41,18 +44,10 @@ const buttonVariants = cva(
   }
 );
 
-const Button = React.forwardRef(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
-    return (
-      <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
-        ref={ref}
-        {...props}
-      />
-    );
-  }
-);
+const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
+  const Comp = asChild ? Slot : "button";
+  return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
+});
 Button.displayName = "Button";
 
 export { Button, buttonVariants };

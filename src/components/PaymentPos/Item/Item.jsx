@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 import { GoPencil } from "react-icons/go";
 import { TbMinus, TbPlus } from "react-icons/tb";
+import { Modal, MenuDetail } from "@/components";
 
 export default function Item() {
   return (
@@ -14,13 +16,24 @@ export default function Item() {
           <p className="text-text-caption text-sm">RM 5.50</p>
         </div>
         <div className="flex flex-row justify-between">
-          <span className="bg-background-secondary p-xs rounded-full">
-            <GoPencil className="bg-background-primary rounded-full w-6 h-6 p-2xs" />
+          <span className="p-xs bg-background-secondary rounded-full flex">
+            <Modal
+              open={
+                <Button variant="icon-sm" size="icon-sm">
+                  <GoPencil />
+                </Button>
+              }
+              content={<MenuDetail />}
+            />
           </span>
           <span className="p-xs bg-background-secondary rounded-full flex flex-row gap-x-md">
-            <TbMinus className="bg-background-primary rounded-full w-6 h-6 p-2xs" />
+            <Button variant="icon-sm" size="icon-sm">
+              <TbMinus />
+            </Button>
             <p>1</p>
-            <TbPlus className="bg-background-primary rounded-full w-6 h-6 p-2xs" />
+            <Button variant="icon-sm" size="icon-sm">
+              <TbPlus />
+            </Button>
           </span>
         </div>
       </div>
