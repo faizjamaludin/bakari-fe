@@ -1,3 +1,4 @@
 import { categoryColumn } from "./categoryColumn";
+import { allOrderColumn } from "./allOrderColumn";
 
-export { categoryColumn };
+export { categoryColumn, allOrderColumn };

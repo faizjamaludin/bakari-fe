@@ -7,7 +7,7 @@ import { settingMenuList } from "@/components/SidebarMenu/config/settingMenuList
 function Settings({ children }) {
   return (
     <DashboardLayout>
-      <DashboardHeader />
+      <DashboardHeader title="Settings" />
       <div className="grid grid-cols-[300px,_1fr] gap-x-lg">
         <SidebarMenu menuList={settingMenuList} />
         {children}

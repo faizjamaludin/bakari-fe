@@ -34,9 +34,9 @@ function Table({ data, columns }) {
                 <th
                   key={header.id}
                   style={{ width: header.getSize() }}
-                  className={`text-text-caption font-medium text-sm text-start bg-background-secondary py-md px-lg rounded-xs`}
+                  className={`text-text-caption font-medium text-sm text-start bg-background-primary px-sm`}
                 >
-                  <span className="flex flex-row items-center gap-x-md">
+                  <span className="flex flex-row items-center justify-center gap-x-md rounded-full border p-md">
                     {header.isPlaceholder
                       ? null
                       : flexRender(header.column.columnDef.header, header.getContext())}
@@ -69,7 +69,7 @@ function Table({ data, columns }) {
               {row.getVisibleCells().map((cell) => (
                 <td
                   key={cell.id}
-                  className="border-b border-border-primary px-lg py-md text-sm font-medium text-text-primary"
+                  className="border-b border-border-primary px-2xl py-md text-sm font-medium text-text-primary text-center"
                 >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>

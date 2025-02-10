@@ -1,16 +1,14 @@
-import React from 'react'
-import Activity from '../Activity'
-import { SidebarMenu } from '@/components'
-import Order from './Order'
-import { activityMenuList } from '@/components/SidebarMenu/config/activityMenuList'
+import React from "react";
+import Activity from "../Activity";
+
+import Order from "./Order";
 
 function BillingQue() {
-    return (
-        <Activity>
-            <SidebarMenu menuList={activityMenuList} />
-            <Order />
-        </Activity>
-    )
+  return (
+    <Activity>
+      <Order />
+    </Activity>
+  );
 }
 
-export default BillingQue
+export default BillingQue;

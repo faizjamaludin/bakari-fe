@@ -1,19 +1,21 @@
-import React from 'react'
-import Header from './Header/Header'
-import Option from './Option/Option'
-import { DashboardLayout } from '@/layouts'
-import TotalCard from './TotalCard/TotalCard'
-import Graph from './Graph/Graph'
+import React from "react";
+import Option from "./Option/Option";
+import { DashboardLayout } from "@/layouts";
+import TotalCard from "./TotalCard/TotalCard";
+import Graph from "./Graph/Graph";
+import AllOrder from "./AllOrder/AllOrder";
+import { DashboardHeader } from "@/components";
 
 function Report() {
-    return (
-        <DashboardLayout>
-            <Header />
-            <Option />
-            <TotalCard />
-            <Graph />
-        </DashboardLayout>
-    )
+  return (
+    <DashboardLayout>
+      <DashboardHeader title="Report" />
+      <Option />
+      <TotalCard />
+      <Graph />
+      <AllOrder />
+    </DashboardLayout>
+  );
 }
 
-export default Report
+export default Report;

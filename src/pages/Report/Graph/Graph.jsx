@@ -1,16 +1,16 @@
-import React from 'react'
-import FavouriteProduct from './FavouriteProduct'
+import React from "react";
+import FavouriteProduct from "./FavouriteProduct";
 
 function Graph() {
-    return (
-        <div className='grid grid-cols-[1fr,_500px] gap-lg h-[500px]'>
-            {/* do the graph here */}
-            <div className='bg-background-primary rounded-sm'></div>
+  return (
+    <div className="grid grid-cols-[1fr,_500px] gap-lg">
+      {/* do the graph here */}
+      <div className="bg-background-primary rounded-sm"></div>
 
-            {/* favourite product here */}
-            <FavouriteProduct />
-        </div>
-    )
+      {/* favourite product here */}
+      <FavouriteProduct />
+    </div>
+  );
 }
 
-export default Graph
+export default Graph;
