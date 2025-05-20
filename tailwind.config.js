@@ -1,16 +1,87 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-  	extend: {
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {}
-  	}
+    extend: {
+      colors: {
+        primary: "#2D71F8",
+        secondary: "#FC4A4A",
+        background: {
+          success: "#f2fcfa",
+          purple: "#fef1fc",
+          orange: "#fde9de",
+          cream: "#fef8f0",
+          pink: "#ffe9f3",
+          red: "#fff5f5",
+          blue: "#f5f9ff",
+          primary: "#FFFFFF",
+          secondary: "#fafafa",
+        },
+        text: {
+          success: "#137e6a",
+          purple: "#bd81ba",
+          orange: "#f98849",
+          cream: "#b59075X",
+          pink: "#fd459b",
+          red: "#fe6eb1",
+          blue: "#2d71f8",
+          caption: "#969696",
+          //   caption: "#B7B7B7",
+          primary: "#333333",
+        },
+      },
+      padding: {
+        xxs: "0.25rem",
+        xs: "0.5rem",
+        sm: "0.75rem",
+        md: "1rem",
+        lg: "1.25rem",
+        xl: "1.5rem",
+      },
+      margin: {
+        xxs: "0.25rem",
+        xs: "0.5rem",
+        sm: "0.75rem",
+        md: "1rem",
+        lg: "1.25rem",
+        xl: "1.5rem",
+      },
+      gap: {
+        xxs: "0.25rem",
+        xs: "0.5rem",
+        sm: "0.75rem",
+        md: "1rem",
+        lg: "1.25rem",
+        xl: "1.5rem",
+      },
+      fontSize: {
+        xxs: "0.25rem",
+        xs: "0.6rem",
+        sm: "0.813rem",
+        md: "1rem",
+        lg: "1.25rem",
+        h1: "2.25rem",
+        h2: "2rem",
+        h3: "1.75rem",
+        h4: "1.5rem",
+        h5: "1.25rem",
+        h6: "1rem",
+      },
+      borderRadius: {
+        xs: "0.25rem",
+        sm: "0.5rem",
+        md: "0.75rem",
+        lg: "1rem",
+        xl: "1.25rem",
+        full: "100rem",
+      },
+      boxShadow: {
+        md: "0 4px 6px -1px rgb(0 0 0 / 0.03), 0 2px 4px -2px rgb(0 0 0 / 0.03);",
+        "top-md":
+          "0 -4px 6px -1px rgb(0 0 0 / 0.03), 0 -2px 4px -2px rgb(0 0 0 / 0.03);",
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };
