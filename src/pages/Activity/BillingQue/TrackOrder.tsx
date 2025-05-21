@@ -22,7 +22,17 @@ export default function TrackOrder() {
           <span className="text-text-caption">Table : 06</span>
           <span className="text-text-caption">09:15 AM</span>
           {/* dashed border */}
-          <span className="border border-dashed"></span>
+          <span className="border border-dashed my-xxs"></span>
+          <div className="flex flex-col text-text-caption">
+            <p>1x Beef Crowich</p>
+            <p>1x Grains Pan Bread</p>
+            <p>1x Cheezy Sourdough</p>
+            <p>1x Sliced Black Forest</p>
+          </div>
+          <div className="flex flex-row justify-between flex-1 items-center text-text-caption font-medium">
+            <p>Total Order</p>
+            <p className="font-medium">4</p>
+          </div>
         </div>
       </div>
     </div>
