@@ -25,6 +25,8 @@ const buttonVariants = cva(
         "category-card-active":
           "rounded-sm border border-text-blue bg-background-blue items-start justify-start p-sm flex flex-col",
         "icon-rounded": "rounded-full bg-background-secondary",
+        category:
+          "bg-background-secondary text-text-caption font-medium py-sm rounded-full border border-background-secondary hover:bg-background-blue hover:text-text-blue hover:border hover:border-text-blue",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -32,6 +34,7 @@ const buttonVariants = cva(
         lg: "h-11 rounded-md px-8",
         icon: "h-12 w-12",
         "category-card": "h-32 w-32 rounded-sm",
+        fit: "h-fit w-32",
       },
     },
     defaultVariants: {
